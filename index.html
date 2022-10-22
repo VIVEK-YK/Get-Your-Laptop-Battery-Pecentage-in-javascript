@@ -31,9 +31,6 @@
         navigator.getBattery().then(function(battery){
             let batteryLevel = (battery.level)*100;
             div.innerHTML = `Your Battery Level is ${batteryLevel}%`
-            if(div.style.width =batteryLevel){
-                div.style.backgroundColor = 'blue';
-                div.style.width = "200px";
             }
         })
     })
